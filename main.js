@@ -53,8 +53,9 @@
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
-  /* Contact form: no backend on a static site — capture submit and explain,
-     unless the form has a real action wired up (see contact.html comment). */
+  /* Contact form: FormSubmit.co now handles delivery directly via the
+     form's action attribute (see contact.html) — no backend needed. This
+     stays only as a safety net for a form explicitly marked data-static-demo. */
   var form = document.querySelector('#contact-form');
   if (form && form.dataset.staticDemo === 'true') {
     form.addEventListener('submit', function (e) {
