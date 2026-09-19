@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Seamar Maritime Advisory</title>
 <meta name="description" content="Contact Seamar for an independent, confidential maritime technical or regulatory consultation.">
-<link rel="icon" href="assets/favicon.png">
+<link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container site-header__inner">
     <a href="index.html" class="brand" aria-label="Seamar — Home">
-      <img src="assets/logo-navy.png" alt="Seamar">
+      <img src="logo-navy.png" alt="Seamar">
     </a>
     <nav class="nav" aria-label="Primary">
       <ul class="nav__links">
@@ -64,7 +64,22 @@
         </div>
       </div>
 
-      <form class="form" id="contact-form" data-static-demo="true">
+      <form class="form" id="contact-form" action="https://formsubmit.co/seamarlogistic.la@gmail.com" method="POST">
+        <!-- FormSubmit.co: a free form-to-email relay, no account or signup needed —
+             it just delivers submissions to the address in the action URL above.
+             IMPORTANT ONE-TIME STEP: the first time this form is submitted (for real,
+             from the live site — a test submission works fine for this), FormSubmit
+             emails seamarlogistic.la@gmail.com a confirmation link that must be
+             clicked to activate delivery. Until that's clicked, submissions are
+             silently dropped. Do this right after the site goes live. -->
+        <input type="hidden" name="_subject" value="New inquiry — Seamar website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thank-you.html">
+        <!-- Honeypot spam trap: real visitors never see or fill this field (hidden
+             below), so FormSubmit silently discards any submission where it's filled. -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
         <div class="form-row">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
@@ -82,19 +97,6 @@
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
         <button type="submit" class="btn btn-dark" style="justify-self:start;">Send Message</button>
-        <p class="form-note form-status"></p>
-        <!--
-          This is a static HTML form with no backend, so submissions won't go
-          anywhere until it's wired up. Two easy, no-server options:
-
-          1. Formspree (https://formspree.io) — change the <form> tag to:
-             <form class="form" action="https://formspree.io/f/{your-form-id}" method="POST">
-             and remove data-static-demo="true" / the JS intercept in main.js.
-
-          2. Netlify Forms (if hosting on Netlify) — add netlify to the <form> tag:
-             <form class="form" name="contact" method="POST" data-netlify="true">
-             and add a hidden input: <input type="hidden" name="form-name" value="contact">
-        -->
       </form>
     </div>
   </section>
@@ -105,7 +107,7 @@
   <div class="container">
     <div class="site-footer__top">
       <div class="site-footer__brand">
-        <img src="assets/logo-badge.png" alt="Seamar" style="height:64px;width:auto;">
+        <img src="logo-badge.png" alt="Seamar" style="height:64px;width:auto;">
         <p>Independent maritime technical and regulatory advisory.</p>
       </div>
       <nav class="site-footer__nav" aria-label="Footer">
@@ -128,6 +130,6 @@
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script src="js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
