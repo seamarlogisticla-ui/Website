@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Seamar Maritime Advisory</title>
+<meta name="description" content="About Luis Bernal González — Seamar. Merchant Marine Captain, flag-state accident investigator, and Panama's former Permanent Representative to the IMO.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="brand" aria-label="Seamar — Home">
+      <img src="assets/logo-navy.png" alt="Seamar">
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="index.html" data-nav="index.html">Home</a></li>
+        <li><a href="services.html" data-nav="services.html">Services</a></li>
+        <li><a href="about.html" data-nav="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html" data-nav="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Request a Consultation</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </nav>
+  </div>
+  <div class="nav-drawer">
+    <div class="nav-drawer__links">
+      <a href="index.html" data-nav="index.html">Home</a>
+      <a href="services.html" data-nav="services.html">Services</a>
+      <a href="about.html" data-nav="about.html">About</a>
+      <a href="contact.html" data-nav="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="btn btn-dark">Request a Consultation</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Page hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker">Who We Are</span>
+      <h1>About</h1>
+      <p>Founded in 2010. Led directly by Luis Bernal González, following nearly six years representing Panama before the International Maritime Organization.</p>
+    </div>
+  </section>
+
+  <!-- Bio -->
+  <section class="section section--off">
+    <div class="container about-layout">
+      <div class="about-portrait reveal">
+        <img src="assets/luis-portrait.jpg" alt="Luis Bernal González, founder of Seamar">
+      </div>
+      <div class="about-copy reveal">
+        <p>Luis Bernal González began his maritime career at sea, qualifying through the ranks to Merchant Marine Captain and holding licenses as Captain, Chief Officer, and Tugboat Captain.</p>
+        <p>He went on to serve as a Flag State and Port State Control Inspector and Maritime Accident Investigator for the Panama Maritime Authority, and as a Marine Surveyor for classification and certification bodies including Bureau Veritas. From 2008 to 2011, he served as Marine Technical Advisor to Shell, auditing petroleum terminals and vessel operations across Central and South America and the Caribbean. Alongside this work, he lectured in maritime safety, cruise business management, and naval technology at the International Maritime University of Panama and the University of the Isthmus of Panama.</p>
+        <p>In 2010, he founded the company now operating as Seamar (registered as Seamarbroken S.A.), leading it directly as Technical Manager for nearly a decade — developing safety and quality management systems and conducting inspections and audits across the maritime sector.</p>
+        <p>From 2019 to 2025, he served as Panama's Ambassador and Permanent Representative to the International Maritime Organization, representing the Panama Ship Registry before the IMO, the International Oil Pollution Compensation Funds, and the International Mobile Satellite Organization, where he chaired its Advisory Committee. Following this appointment, he returned to lead Seamar directly.</p>
+        <p>He is a Lead Auditor across ISO 9001, ISM, and ISPS, an OCIMF-accredited tanker inspector, and a licensed insurance broker, alongside an extensive certification base in maritime fire safety and life-saving systems. He holds a degree in Nautical Engineering and an MBA in Multimodal Transport Management, and is fluent in Spanish and English, with a working knowledge of Japanese.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="section section--ink">
+    <div class="container closing reveal">
+      <p>Seamar serves clients internationally, with experience spanning Panama, the Americas, Europe, and Asia.</p>
+      <p>Initial inquiries are treated in confidence.</p>
+      <a href="contact.html" class="btn btn-gold">Contact Seamar</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <img src="assets/logo-badge.png" alt="Seamar" style="height:64px;width:auto;">
+        <p>Independent maritime technical and regulatory advisory.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="site-footer__contact">
+        <p>Panama<br>
+        <a href="tel:+5076642-8501">+507 6642-8501</a><br>
+        <a href="mailto:seamarlogistic.la@gmail.com">seamarlogistic.la@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span id="year"></span> Seamar</span>
+      <span>Seamar is a trade name of Seamarbroken S.A.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
